@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Infografía - Página 1</title>
+<style>
+@font-face { font-family: 'Riforma LL'; src: local('Riforma LL'); }
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, #346162, #ffffff);
+  position: relative;
+}
+
+.contenedor {
+  position: relative;
+  width: 540px;
+  height: 960px;
+  background: url('page1.png') no-repeat center center;
+  background-size: contain;
+}
+
+/* botón común */
+.boton {
+  position: absolute;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 30px;
+  padding: 0;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Riforma LL', sans-serif;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border: 2px solid #000;
+}
+
+/* efecto hover: elevación sutil */
+.boton:hover { transform: translateY(-2px); border-color: #222; }
+
+/* colores exactos y contraste de texto */
+#btn1 { background-color: #c60800; color: #000; }  /* Mala Rodríguez */
+#btn2 { background-color: #fef1bf; color: #000; }  /* Marina Carmona */
+#btn3 { background-color: #213A97; color: #000; }  /* José Mercé */
+#btn4 { background-color: #FAE200; color: #000; }  /* Chucho Valdés */
+#btn5 { background-color: #fef0b7; color: #000; }  /* Patricia Galván */
+#btn6 { background-color: #dc7a5b; color: #000; }  /* La Bien Querida (moved) */
+#btn7 { background-color: #69E0AA; color: #000; }  /* Ver más conciertos (grande) */
+
+/* posiciones (ajustadas) */
+#btn1 { left: 150px; top: 300px; }
+#btn2 { left: 427px; top: 300px; }
+#btn3 { left: 150px; top: 578px; }
+#btn4 { left: 427px; top: 578px; }
+#btn5 { left: 150px; top: 858px; }
+#btn6 { left: 427px; top: 858px; }
+
+/* botón grande a la izquierda (btn7) */
+#btn7 {
+  left: 20px;
+  top: 910px;
+  width: 140px;
+  height: 40px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:5px;
+}
+
+/* navegación a la derecha */
+.navegacion {
+  position: absolute;
+  top: 917px;
+  right: 20px;
+}
+.navegacion a {
+  background: #69E0AA;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="contenedor">
+  <a id="btn1" class="boton" href="https://insolitosevilla.com/conference-event/mala-rodriguez/" target="_blank">Comprar</a>
+  <a id="btn2" class="boton" href="https://insolitosevilla.com/conference-event/marina-carmona/" target="_blank">Comprar</a>
+  <a id="btn3" class="boton" href="https://insolitosevilla.com/conference-event/concierto-jose-merce/" target="_blank">Comprar</a>
+  <a id="btn4" class="boton" href="https://insolitosevilla.com/conference-event/chucho-valdes-royal-quartet/" target="_blank">Comprar</a>
+  <a id="btn5" class="boton" href="https://auditorionissancartuja.janto.es/es/espectaculo/insolito--patricia-galvan/070126PATRIGALVA" target="_blank">Comprar</a>
+  <a id="btn6" class="boton" href="https://insolitosevilla.com/conference-event/la-bien-querida/" target="_blank">Comprar</a>
+  <a id="btn7" class="boton" href="https://insolitosevilla.com/events-timetable/" target="_blank">Ver más conciertos</a>
+
+  <div class="navegacion">
+    <a href="pagina2.html">&gt;</a>
+  </div>
+</div>
+</body>
+</html>
