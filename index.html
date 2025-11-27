@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Infografía - Página 1</title>
+<style>
+@font-face {
+  font-family: 'Riforma LL';
+  src: local('Riforma LL');
+}
+
+body {
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+background: linear-gradient(to bottom, #346162, #ffffff);
+font-family: 'Riforma LL', sans-serif;
+}
+
+.contenedor {
+position: relative;
+width: 540px;
+height: 960px;
+background: url('pagina1.png') no-repeat center center;
+background-size: contain;
+}
+
+/* Estilo de todos los botones */
+.boton {
+position: absolute;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+width: 100px;
+height: 30px;
+font-size: 16px;
+font-weight: bold;
+font-family: 'Riforma LL', sans-serif;
+border-radius: 6px;
+text-decoration: none;
+border: 2px solid #000;
+color: #000;
+transition: all 0.2s ease;
+white-space: nowrap;
+overflow: hidden;
+text-overflow: ellipsis;
+cursor: pointer;
+}
+
+/* Hover: elevación y borde más fuerte */
+.boton:hover {
+transform: translateY(-2px);
+border-color: #222;
+}
+
+/* Posiciones exactas de los botones pequeños */
+#btn1 { left: 150px; top: 300px; background-color:#F2B9A2; }
+#btn2 { left: 427px; top: 300px; background-color:#fef0b7; }
+#btn3 { left: 150px; top:578px; background-color:#dc7a5b; }
+#btn4 { left: 427px; top:578px; background-color:#F27DB5; }
+#btn5 { left: 150px; top:858px; background-color:#f1b9a3; }
+#btn6 { left: 427px; top:858px; background-color:#ff010b; }
+
+/* Botón grande inferior al estilo de páginas 2 y 3 */
+#btn7 {
+left: 20px;
+top: 910px;
+width: 140px;
+height: 40px;
+font-size: 14px;
+font-weight: bold;
+border-radius: 5px;
+background-color: #69E0AA;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+text-decoration: none;
+border: 2px solid #000;
+color: #000;
+cursor: pointer;
+transition: all 0.2s ease;
+}
+
+#btn7:hover {
+transform: translateY(-2px);
+border-color: #222;
+}
+
+/* Navegación */
+.navegacion {
+position: absolute;
+top: 917px;
+right: 20px;
+}
+.navegacion a {
+background: #69E0AA;
+color: #000;
+padding: 5px 10px;
+border-radius: 4px;
+text-decoration: none;
+} </style>
+
+</head>
+<body>
+<div class="contenedor">
+
+  <!-- Botones pequeños -->
+
+<a id="btn1" class="boton" href="https://insolitosevilla.com/conference-event/siloe/" target="_blank">Comprar</a> <a id="btn2" class="boton" href="https://auditorionissancartuja.janto.es/es/espectaculo/insolito--patricia-galvan/070126PATRIGALVA" target="_blank">Comprar</a> <a id="btn3" class="boton" href="https://insolitosevilla.com/conference-event/la-bien-querida/" target="_blank">Comprar</a> <a id="btn4" class="boton" href="https://insolitosevilla.com/conference-event/bebe/" target="_blank">Comprar</a> <a id="btn5" class="boton" href="https://www.vivaticket.es/ticket/lauragallego-laultimafolclorica-sevilla/LauraGallegoSevi" target="_blank">Comprar</a> <a id="btn6" class="boton" href="https://www.vivaticket.es/ticket/alejandro-astola-sevilla-3a-fecha/14273#/sell/events/14273/sessions/21237" target="_blank">Comprar</a>
+
+  <!-- Botón grande inferior -->
+
+<a id="btn7" class="boton" href="https://insolitosevilla.com/events-timetable/" target="_blank">Ver más conciertos</a>
+
+  <!-- Navegación -->
+
+  <div class="navegacion">
+    <a href="pagina2.html">&gt;</a>
+  </div>
+
+</div>
+</body>
+</html>
